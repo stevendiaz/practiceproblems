@@ -13,11 +13,3 @@ void reverseString(char *input, int inputSize) {
 		j--;
 	}
 }
-
-int main()
-{
-    char input[] = "Hello World!";
-    printf("Pre: %s\n", input);
-    reverseString(input, strlen(input));
-    printf("Output: %s\n", input);
-}
