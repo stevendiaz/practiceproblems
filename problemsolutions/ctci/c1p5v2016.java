@@ -7,6 +7,8 @@ public class c1p15 {
 		System.out.println("pales, pale -> " +oneAway("pales","pale"));
 		System.out.println("pale, bale -> " +oneAway("pale", "bale"));
 		System.out.println("pale, bake -> " +oneAway("pale", "bake"));
+		//THIS TEST CASE CURRENTLY FAILS
+		System.out.println("pale, elab -> " +oneAway("pale", "bake"));
 	}
 	
 	public static boolean oneAway(String original, String changed) {
