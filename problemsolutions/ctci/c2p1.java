@@ -19,7 +19,7 @@ public class c2p1 {
 				}
 				fwd = fwd.next;
 			}
-			if(runner = current) {
+			if(fwd = n2) {
 				n = n2;
 				n2 = n2.next;
 			}
