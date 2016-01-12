@@ -25,11 +25,9 @@ public class c2p7 {
 
 	public Node traverseList(Node head, int incr) {
 		Node temp = head;
-		int p = 0;
-		while(temp != null && p < incr) {
-			p++;
-			if(temp.next == null)
-				break;
+		while(temp != null && incr > 0) {
+			incr--;
+			temp = temp.next;
 		} 
 		return temp;
 	}
