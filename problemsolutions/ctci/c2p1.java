@@ -1,9 +1,6 @@
 package ctci;
 
 public class c2p1 {
-	public static void main(String args[]) {
-		//TODO: Find implementation of singly linked list to test
-	}
 	
 	public static void removeDuplicates(Node head) {
 		Node n = head;
