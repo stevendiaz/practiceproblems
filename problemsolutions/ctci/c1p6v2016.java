@@ -15,7 +15,7 @@ public class c1p6v2016 {
 			while(j < input.length() && current == input.charAt(j)) {
 				j++;
 			}
-			result.append(input.charAt(i) + ("" + (j - i)));
+			result.append(input.charAt(i) + ((char)(j - i)));
 			if(i == j)
 				i++;
 			else
