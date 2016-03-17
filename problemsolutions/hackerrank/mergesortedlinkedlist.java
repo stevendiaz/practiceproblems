@@ -1,12 +1,7 @@
-
- linked lists 
-  head pointer input could be NULL as well for empty list
-  Node is defined as 
-  class Node {
-     int data;
-     Node next;
-  }
-*/
+class Node {
+  int data;
+  Node next;
+}
 
 Node MergeLists(Node headA, Node headB) {
      // This is a "method-only" submission. 
