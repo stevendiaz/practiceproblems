@@ -7,14 +7,16 @@ def gayle_shapley(free_men, free_women):
         m = free_men.pop()
         w = m.preferences.pop()
         if(w.spouse == None):
-            enage(m, w)
+            enage(m, w, couples)
             free_women.remove(w)
         else:
             if(w.prefers(m, w.spouse)):
-                breakup(w, w.spouse)
-                engage(m,w)
+                breakup(w, w.spouse, couples)
+                engage(m,w, couples)
+                free_women.remove(w)
             else:
                 free_men.add(m)
+    return couples
 
 def breakup(w, m, couples):
     m.spouse = None
