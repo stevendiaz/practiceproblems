@@ -1,5 +1,11 @@
 
 
+free_men = []
+free_women = []
+couples = []
+
+def init_sets():
+    pass
 
 def gayle_shapley(free_men, free_women):
     couples = []
@@ -7,33 +13,31 @@ def gayle_shapley(free_men, free_women):
         m = free_men.pop()
         w = m.preferences.pop()
         if(w.spouse == None):
-            enage(m, w, couples)
-            free_women.remove(w)
+            m.enages(w)
+            couples.add(Couple(m, w))
         else:
             if(w.prefers(m, w.spouse)):
-                breakup(w, w.spouse, couples)
-                engage(m,w, couples)
-                free_women.remove(w)
+                breakup(w, w.spouse)
+                m.engages(w)
+                couples.add(Couple(m, w))
             else:
                 free_men.add(m)
     return couples
-
-def breakup(w, m, couples):
-    m.spouse = None
-    w.spouse = None
-    for(c in couples):
-        if(c.m.name == m.name and c.w.name == w.name):
-            couples.remove(c)
-
-def engage(m, w, couples):
-    m.spouse = w
-    w.spouse = m
-    couples.add(Couple(m,w))
 
 class Couple(object):
     def __init__(self, m, w):
         self.m = m
         self.w = w
+        
+    def breakup(m, w):
+        m.spouse = None
+        w.spouse = None
+        free_men.add(m)
+        free_women.add(w)
+        
+        for(c in couples):
+            if self is c:
+                couples.remove(c)
 
 class Person(object):
     name = None
@@ -46,6 +50,12 @@ class Person(object):
         if(m1rank < m2rank):
             return True
         return False
+        
+    def engages(m, w):
+        m.spouse = w
+        w.spouse = m
+        free_men.remove(m)
+        free_women.remove(w)
 
 
 if __name__ == 'main':
