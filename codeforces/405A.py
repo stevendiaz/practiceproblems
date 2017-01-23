@@ -1,17 +1,20 @@
 import fileinput
 n = None
 weights = None
-
+"""
+PARSING
+"""
 for line in fileinput.input():
     if n is None:
         n = int(line)
     else:
         weights = line.split()
-
-#for i in xrange(0, n):
-#    weights[i] = int(weights[i])
 weights = [int(x) for x in weights]
 
+
+"""
+ALGORITHM
+"""
 def shift_weights(weights, i):
     if i == n - 1:
         return
