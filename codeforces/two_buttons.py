@@ -17,7 +17,6 @@ def square_factors(m):
 def find_square(n, m):
     num_steps = 0
     factors = square_factors(m)
-    print(factors)
     while(n != m):
         if n in factors:
             n *= 2
