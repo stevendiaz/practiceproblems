@@ -1,0 +1,64 @@
+Chapter 5 - Primitives:
+5.1 - Computing Parity
+5.2 - Swap Bits
+5.3 - Bit Reversal
+5.5 - Power Set
+5.6 - String and Integer Conversions
+5.7 - Base Conversion
+5.8 - Spreadsheet Encoding
+5.11 - Enumerating Primes
+
+Chapter 6: Strings & Arrays
+6.1 - Dutch National Flag
+6.14 - Sodoku Checker
+6.22 - Phone Number Mnemonic
+
+Chapter 9: Binary Trees
+9.2 - K-balanced nodes
+9.5 - Inorder traversal in O(1) space
+9.7 - Reconstructing Binary Tree
+9.6 - Determine the K-th node in an in-order traversal
+9.8 - Reconstructing binary tree from pre-order traversal
+9.12 - Lowest Common Ancestor
+9.13 - Lowest Common Ancestor with parent node
+
+Chapter 15: Meta-algorithms & Dynamic Programming
+15.X - Find maximum subarray
+15.11 - Levenstien Distances
+
+##############################################
+
+Problems done in new EPI edition
+Chapter 4 - Primitive Types
+4.1 - Computing parity of word
+4.2 - Swap bits 
+4.3 - Reverse bits
+
+Chapter 5 - Arrays
+5.1 - Dutch National Flag problem
+5.5 - Delete duplicates from sorted array **
+5.9 - Enumerate primes
+5.17 - Sodoku Checker problem
+5.18 - Spiral ordering of 2D array
+
+Chapter 6 - Strings
+6.1 - Interconvert Strings and integers
+6.2 - Base conversion
+6.3 - Compute spreadsheet column encoding
+6.7 - Compute mnemonic for a phone number
+6.11 - Write a string sinusoidally ** 
+
+Chapter 9 - Binary Trees
+9.3 - Compute LCA in binary tree
+9.4 - Compute LCA with parent pointers
+9.9 - Compute kth node in an inorder traversal
+9.11 - Implement an inorder traversal with O(1) space
+9.12 - Reconstruct a binary tree from traversal data ** 
+9.13 - Reconstruct a binary tree from preorder traversal with markers
+
+Not carried over: 
+5.5 - Power Set
+9.2 - K-balanced nodes
+9.7 - Reconstructing Binary Tree
+
+
