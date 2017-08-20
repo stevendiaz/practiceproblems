@@ -59,7 +59,8 @@ Chapter 9 - Binary Trees
 Chapter 16 - Dynamic Programming
 16.1 - Count the number of score combinations
 16.2 - Levenstien Distances
-
+16.3 - Count the number of ways to traverse a 2D array
+ 
 Not carried over: 
 5.5 - Power Set
 9.2 - K-balanced nodes
